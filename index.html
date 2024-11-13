@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            height: 10vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        article{
+            height: 88vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <button onclick="dark_mode()">Dark Mode</button>
+        <button onclick="light_mode()">Light Mode</button>
+    </nav>
+    <article>
+        <h1>Welcome to Java Script</h1>
+    </article>
+
+    <script>
+        function dark_mode(){
+            document.body.style.backgroundColor = 'black'
+            document.body.style.color = 'white'
+
+        }
+        function light_mode(){
+            document.body.style.backgroundColor = 'white'
+            document.body.style.color = 'black'
+        }
+    </script>
+</body>
+</html>
